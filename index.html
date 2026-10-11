@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MECHABOTS | Modular Robotics for MSMEs</title>
+  <meta name="description" content="MECHABOTS is a student startup project developing a low-cost modular collaborative robot designed for Micro, Small, and Medium Enterprises.">
+  <meta property="og:title" content="MECHABOTS | Modular Robotics for MSMEs">
+  <meta property="og:description" content="A student startup project developing a low-cost modular collaborative robot for MSMEs. Prototype in development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="">
+  <meta name="theme-color" content="#0a0e1a">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- NAVIGATION -->
+  <!-- ============================================ -->
+  <header class="header" id="header">
+    <div class="container flex-between">
+      <a href="#home" class="logo" aria-label="MECHABOTS Home">
+        <img src="assets/logo.svg" alt="MECHABOTS" class="logo-img" width="180" height="36">
+      </a>
+
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#solution" class="nav-link">Our Solution</a></li>
+          <li><a href="#features" class="nav-link">Features</a></li>
+          <li><a href="#applications" class="nav-link">Applications</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#development" class="nav-link">Development</a></li>
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn-primary nav-cta">Request a Demo</a>
+
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay"></div>
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation" role="navigation">
+    <div class="mobile-menu-header">
+      <img src="assets/logo.svg" alt="MECHABOTS" class="logo-img" width="160" height="32">
+      <button class="mobile-menu-close" id="mobile-menu-close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-nav-link">Home</a></li>
+      <li><a href="#solution" class="mobile-nav-link">Our Solution</a></li>
+      <li><a href="#features" class="mobile-nav-link">Features</a></li>
+      <li><a href="#applications" class="mobile-nav-link">Applications</a></li>
+      <li><a href="#how-it-works" class="mobile-nav-link">How It Works</a></li>
+      <li><a href="#development" class="mobile-nav-link">Development</a></li>
+      <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn-primary mobile-cta">Request a Demo</a>
+  </nav>
+
+  <main>
+    <!-- ============================================ -->
+    <!-- HERO SECTION -->
+    <!-- ============================================ -->
+    <section class="hero" id="home">
+      <div class="hero-bg-pattern"></div>
+      <div class="container hero-container">
+        <div class="hero-content animate-on-scroll">
+          <span class="badge badge-glow">🤖 Prototype in Development</span>
+          <h1 class="hero-title">Automation Built for the Next Generation of <span class="text-gradient">Manufacturing.</span></h1>
+          <p class="hero-subtitle">Meet <strong>MECHABOTS</strong> — our student startup project developing a low-cost modular collaborative robot designed around the needs of MSMEs.</p>
+          <p class="hero-description">Our goal is to make repetitive manufacturing tasks easier to automate through a flexible robotic platform with interchangeable grippers, sensor-based operation, and simple programming.</p>
+          <div class="hero-cta-group">
+            <a href="#contact" class="btn-primary btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              Discuss a Pilot Project
+            </a>
+            <a href="#solution" class="btn-secondary btn-lg">
+              Explore Our Solution
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </a>
+          </div>
+          <ul class="hero-highlights">
+            <li class="hero-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Modular Robot Design
+            </li>
+            <li class="hero-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Multiple Task Possibilities
+            </li>
+            <li class="hero-highlight-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              Designed for MSME Needs
+            </li>
+          </ul>
+        </div>
+        <div class="hero-visual animate-on-scroll" style="animation-delay: 0.2s">
+          <div class="hero-robot-container">
+            <img src="assets/robot-arm.svg" alt="MECHABOTS modular collaborative robotic arm concept illustration" class="hero-robot-img" width="500" height="500">
+            <div class="hero-robot-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- PROBLEM SECTION -->
+    <!-- ============================================ -->
+    <section class="section" id="problem">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">The Challenge</span>
+          <h2>Why MSMEs Need More Accessible Automation</h2>
+          <p class="lead">Many Micro, Small, and Medium Enterprises face significant barriers when trying to adopt industrial automation for their manufacturing processes.</p>
+        </div>
+        <div class="grid-3 mt-4">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3 class="card-title">High Upfront Costs</h3>
+            <p class="card-text">Industrial robots and automation systems often require substantial capital investment that can be prohibitive for smaller manufacturers.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3 class="card-title">Complex Programming</h3>
+            <p class="card-text">Traditional industrial robots require specialized programming knowledge and complex integration processes that smaller factories may not have access to.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="card-title">Maintenance Expenses</h3>
+            <p class="card-text">Ongoing maintenance, repair costs, and the need for specialized technical support can add significantly to the total cost of ownership.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3 class="card-title">Limited Skilled Workers</h3>
+            <p class="card-text">Access to workers with robotics and automation expertise can be limited, particularly for MSMEs in smaller manufacturing hubs.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+            </div>
+            <h3 class="card-title">Repetitive Manual Tasks</h3>
+            <p class="card-text">Workers spend valuable time on repetitive manufacturing tasks that could potentially be automated, limiting productivity and growth.</p>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3 class="card-title">Integration Time</h3>
+            <p class="card-text">Setting up and integrating automation into existing workflows often takes considerable time and can disrupt ongoing production.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- OUR SOLUTION -->
+    <!-- ============================================ -->
+    <section class="section section-alt" id="solution">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Our Approach</span>
+          <h2>One Modular Platform. Multiple Task Possibilities.</h2>
+          <p class="lead">MECHABOTS is developing a modular collaborative robot designed to bring flexible automation within reach of small and medium manufacturers.</p>
+        </div>
+        <div class="solution-grid mt-4">
+          <div class="solution-content animate-on-scroll">
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+              </div>
+              <div>
+                <h3>Modular Robotic Arm</h3>
+                <p>A robotic arm designed with modularity in mind, allowing components to be adapted for different manufacturing tasks.</p>
+              </div>
+            </div>
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+              </div>
+              <div>
+                <h3>Interchangeable End-Effectors</h3>
+                <p>Task-specific grippers and tools that can be swapped to handle different objects and manufacturing operations.</p>
+              </div>
+            </div>
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              </div>
+              <div>
+                <h3>Sensor-Based Detection</h3>
+                <p>Integrated sensors to detect objects and provide feedback for automated operations.</p>
+              </div>
+            </div>
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <div>
+                <h3>Control Unit</h3>
+                <p>A dedicated controller to execute programmed movements and process sensor inputs for task automation.</p>
+              </div>
+            </div>
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+              </div>
+              <div>
+                <h3>Simple Programming</h3>
+                <p>Designed to allow operators to set up basic tasks without extensive robotics programming knowledge.</p>
+              </div>
+            </div>
+            <div class="solution-feature">
+              <div class="solution-feature-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>
+              </div>
+              <div>
+                <h3>Workflow Customization</h3>
+                <p>Potential to customize operations for different manufacturing workflows, depending on the completed design.</p>
+              </div>
+            </div>
+          </div>
+          <div class="solution-diagram animate-on-scroll" style="animation-delay: 0.2s">
+            <img src="assets/robot-diagram.svg" alt="MECHABOTS robot component diagram showing base unit, servo motors, sensor module, controller, and end-effector" class="solution-diagram-img" width="800" height="500">
+            <p class="diagram-caption">Technical component overview — conceptual illustration</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- KEY FEATURES -->
+    <!-- ============================================ -->
+    <section class="section" id="features">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Capabilities</span>
+          <h2>Key Features of the MECHABOTS Platform</h2>
+          <p class="lead">Our modular collaborative robot is being designed with these core capabilities in mind.</p>
+        </div>
+        <div class="grid-3 mt-4" id="features-grid">
+          <!-- Feature cards generated dynamically, with static fallback -->
+          <div class="card feature-card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 class="card-title">Modular Robot Architecture</h3>
+            <p class="card-text">A design intended to support adaptable components and different manufacturing tasks.</p>
+            <span class="status-badge status-development">Under Development</span>
+          </div>
+          <div class="card feature-card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/></svg>
+            </div>
+            <h3 class="card-title">Interchangeable Grippers</h3>
+            <p class="card-text">A proposed ability to change suitable end-effectors depending on the object and task.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+          <div class="card feature-card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3 class="card-title">Sensor-Based Object Detection</h3>
+            <p class="card-text">Sensors intended to help detect objects and support basic automation.</p>
+            <span class="status-badge status-development">Under Development</span>
+          </div>
+          <div class="card feature-card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 class="card-title">Simple Programming</h3>
+            <p class="card-text">A design objective to make basic task setup easier for operators.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+          <div class="card feature-card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+            </div>
+            <h3 class="card-title">Pick-and-Place</h3>
+            <p class="card-text">A target application involving moving suitable objects between defined positions.</p>
+            <span class="status-badge status-development">Under Development</span>
+          </div>
+          <div class="card feature-card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="card-title">Sorting &amp; Screw Tightening</h3>
+            <p class="card-text">Potential applications using appropriate tools, task-specific programming, and sensors.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- APPLICATIONS -->
+    <!-- ============================================ -->
+    <section class="section section-alt" id="applications">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Use Cases</span>
+          <h2>Target Applications</h2>
+          <p class="lead">The MECHABOTS platform is being designed to support these manufacturing applications. Feasibility depends on payload, reach, object characteristics, accuracy, and the completed design.</p>
+        </div>
+        <div class="grid-3 mt-4">
+          <div class="card application-card animate-on-scroll">
+            <div class="application-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="5 9 2 12 5 15"/><polyline points="9 5 12 2 15 5"/><polyline points="15 19 12 22 9 19"/><polyline points="19 9 22 12 19 15"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/></svg>
+            </div>
+            <h3 class="card-title">Pick-and-Place Operations</h3>
+            <p class="card-text">Moving suitable objects between defined positions in manufacturing workflows.</p>
+          </div>
+          <div class="card application-card animate-on-scroll">
+            <div class="application-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></svg>
+            </div>
+            <h3 class="card-title">Sorting</h3>
+            <p class="card-text">Separating and organizing components based on type, size, or other criteria.</p>
+          </div>
+          <div class="card application-card animate-on-scroll">
+            <div class="application-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9z"/></svg>
+            </div>
+            <h3 class="card-title">Small-Part Handling</h3>
+            <p class="card-text">Precise handling of small manufacturing components within the robot's payload capability.</p>
+          </div>
+          <div class="card application-card animate-on-scroll">
+            <div class="application-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="card-title">Screw Tightening</h3>
+            <p class="card-text">Using a suitable attachment to tighten screws in assembly operations.</p>
+          </div>
+          <div class="card application-card animate-on-scroll">
+            <div class="application-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3 class="card-title">Basic Object Inspection</h3>
+            <p class="card-text">Supporting visual or sensor-based quality checks during manufacturing.</p>
+          </div>
+          <div class="card application-card animate-on-scroll">
+            <div class="application-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            </div>
+            <h3 class="card-title">Repetitive Assembly</h3>
+            <p class="card-text">Assisting with repetitive assembly steps to reduce manual effort.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- HOW IT WORKS -->
+    <!-- ============================================ -->
+    <section class="section" id="how-it-works">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Process</span>
+          <h2>How It Works</h2>
+          <p class="lead">A clear four-step process from configuration to task execution.</p>
+        </div>
+        <div class="process-steps mt-4 animate-on-scroll">
+          <div class="process-step">
+            <div class="process-step-number">1</div>
+            <div class="process-step-connector"></div>
+            <div class="process-step-content">
+              <div class="process-step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+              </div>
+              <h3>Configure</h3>
+              <p>Select the supported task and suitable end-effector for the operation.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">2</div>
+            <div class="process-step-connector"></div>
+            <div class="process-step-content">
+              <div class="process-step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+              </div>
+              <h3>Detect</h3>
+              <p>Use appropriate sensors to detect objects or obtain relevant feedback.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">3</div>
+            <div class="process-step-connector"></div>
+            <div class="process-step-content">
+              <div class="process-step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>
+              </div>
+              <h3>Process</h3>
+              <p>The controller executes the configured program using available sensor inputs.</p>
+            </div>
+          </div>
+          <div class="process-step">
+            <div class="process-step-number">4</div>
+            <div class="process-step-content">
+              <div class="process-step-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3>Perform</h3>
+              <p>The robot carries out the programmed movement and uses feedback where implemented.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SAFETY SECTION -->
+    <!-- ============================================ -->
+    <section class="section section-alt" id="safety">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Safety First</span>
+          <h2>Human-Centered Automation Starts with Safety.</h2>
+          <p class="lead">The MECHABOTS project aims to support responsible human–robot collaboration through careful engineering design.</p>
+        </div>
+        <div class="grid-3 mt-4">
+          <div class="card safety-card animate-on-scroll">
+            <div class="card-icon card-icon-safety">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3 class="card-title">Emergency Stop</h3>
+            <p class="card-text">Provision for an emergency-stop mechanism to immediately halt robot operation when needed.</p>
+          </div>
+          <div class="card safety-card animate-on-scroll">
+            <div class="card-icon card-icon-safety">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 class="card-title">Speed &amp; Force Limits</h3>
+            <p class="card-text">Designing for suitable speed and force limits appropriate for collaborative operation.</p>
+          </div>
+          <div class="card safety-card animate-on-scroll">
+            <div class="card-icon card-icon-safety">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+            </div>
+            <h3 class="card-title">Collision Detection</h3>
+            <p class="card-text">Implementing collision detection where technically feasible to enhance operational safety.</p>
+          </div>
+          <div class="card safety-card animate-on-scroll">
+            <div class="card-icon card-icon-safety">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <h3 class="card-title">Risk Assessment</h3>
+            <p class="card-text">Conducting risk assessments for each application to identify and mitigate potential hazards.</p>
+          </div>
+          <div class="card safety-card animate-on-scroll">
+            <div class="card-icon card-icon-safety">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <h3 class="card-title">Operating Procedures</h3>
+            <p class="card-text">Developing appropriate operating procedures for safe setup, operation, and maintenance.</p>
+          </div>
+          <div class="card safety-card animate-on-scroll">
+            <div class="card-icon card-icon-safety">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 class="card-title">Protective Measures</h3>
+            <p class="card-text">Implementing protective measures based on the final application requirements and operating environment.</p>
+          </div>
+        </div>
+        <div class="callout mt-4 animate-on-scroll">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          <p><strong>Important:</strong> Actual collaborative use requires engineering validation and an application-specific risk assessment. The robot is not claimed to be certified, injury-proof, or safe for unguarded operation without supporting validation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- COST-CONSCIOUS DESIGN -->
+    <!-- ============================================ -->
+    <section class="section" id="cost">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Accessible Design</span>
+          <h2>Exploring More Accessible Automation.</h2>
+          <p class="lead">Making automation technology more approachable for small and medium manufacturers.</p>
+        </div>
+        <div class="cost-grid mt-4">
+          <div class="cost-highlight animate-on-scroll">
+            <div class="cost-amount">₹2–3 Lakh</div>
+            <p class="cost-label">Target Development Cost</p>
+            <p class="cost-note">MECHABOTS is targeting a development cost of ₹2–3 lakh for its modular cobot concept. This target will be refined through component selection, prototype testing, supplier quotations, and manufacturing cost analysis.</p>
+            <div class="callout callout-inline">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              <small>This is an initial development cost target — not a confirmed manufacturing cost or selling price.</small>
+            </div>
+          </div>
+          <div class="cost-features animate-on-scroll" style="animation-delay: 0.15s">
+            <h3>Cost-Conscious Design Approach</h3>
+            <ul class="cost-features-list">
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Practical Component Selection</strong> — Choosing readily available, cost-effective components without compromising essential functionality.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Modular Design</strong> — Allowing individual modules to be replaced or upgraded without replacing the entire system.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Reusable End-Effectors</strong> — Interchangeable grippers and tools that can serve multiple tasks.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>Easier Maintenance</strong> — Designing for straightforward maintenance to reduce long-term costs.</span>
+              </li>
+              <li>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                <span><strong>MSME-Focused Requirements</strong> — Targeting the specific needs and constraints of small manufacturers.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- DEVELOPMENT JOURNEY -->
+    <!-- ============================================ -->
+    <section class="section section-alt" id="development">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Our Journey</span>
+          <h2>Development Journey</h2>
+          <p class="lead">Tracking our progress from problem discovery to potential pilot opportunities.</p>
+        </div>
+        <div class="timeline mt-4">
+          <div class="timeline-item timeline-completed animate-on-scroll">
+            <div class="timeline-marker">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-stage">Stage 1</span>
+              <h3>Problem Discovery</h3>
+              <p>Understanding the automation challenges faced by MSMEs through research and direct conversations with small manufacturers.</p>
+            </div>
+          </div>
+          <div class="timeline-item timeline-active animate-on-scroll">
+            <div class="timeline-marker">
+              <div class="timeline-pulse"></div>
+            </div>
+            <div class="timeline-content">
+              <span class="timeline-stage">Stage 2 — Current</span>
+              <h3>Prototype Development</h3>
+              <p>Developing the modular robotic arm concept and selecting appropriate components. Currently building and testing the prototype.</p>
+              <span class="status-badge status-development">Prototype in Development</span>
+            </div>
+          </div>
+          <div class="timeline-item timeline-future animate-on-scroll">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-stage">Stage 3</span>
+              <h3>Testing &amp; Validation</h3>
+              <p>Evaluating supported tasks, repeatability, ease of use, cost, and safety once the prototype reaches the required level of readiness.</p>
+            </div>
+          </div>
+          <div class="timeline-item timeline-future animate-on-scroll">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-stage">Stage 4</span>
+              <h3>Future Pilot Opportunities</h3>
+              <p>Exploring potential factory trials and pilot projects after the prototype has been adequately tested and validated.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- ABOUT MECHABOTS -->
+    <!-- ============================================ -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Who We Are</span>
+          <h2>A Student Startup Working Toward Accessible Automation.</h2>
+          <p class="lead">MECHABOTS is a three-member student startup project based in Chennai, Tamil Nadu, India. We are developing the concept of a low-cost modular collaborative robot to explore how small manufacturers could adopt flexible automation for repetitive tasks.</p>
+        </div>
+        <div class="grid-2 mt-4">
+          <div class="about-info animate-on-scroll">
+            <div class="about-detail">
+              <div class="about-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div>
+                <h3>Project Focus</h3>
+                <p>Modular robotics for manufacturing automation</p>
+              </div>
+            </div>
+            <div class="about-detail">
+              <div class="about-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h3>Target Users</h3>
+                <p>MSME manufacturers looking for accessible automation</p>
+              </div>
+            </div>
+            <div class="about-detail">
+              <div class="about-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              </div>
+              <div>
+                <h3>Current Stage</h3>
+                <p>Prototype development</p>
+              </div>
+            </div>
+            <div class="about-detail">
+              <div class="about-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h3>Location</h3>
+                <p>Chennai, Tamil Nadu, India</p>
+              </div>
+            </div>
+            <div class="about-detail">
+              <div class="about-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </div>
+              <div>
+                <h3>Team Size</h3>
+                <p>3 members</p>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual animate-on-scroll" style="animation-delay: 0.15s">
+            <img src="assets/gripper-concepts.svg" alt="MECHABOTS interchangeable gripper concepts — parallel gripper, suction cup, screwdriver attachment, adaptive gripper" class="about-img" width="800" height="250">
+            <p class="diagram-caption">Gripper concept designs — interchangeable end-effectors</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- BUSINESS MODEL -->
+    <!-- ============================================ -->
+    <section class="section section-alt" id="business-model">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Business Model</span>
+          <h2>A Practical Product and Support Model.</h2>
+          <p class="lead">Our intended business approach, designed around the practical needs of MSME customers. These are planned offerings — availability depends on prototype maturity and business readiness.</p>
+        </div>
+        <div class="grid-3 mt-4">
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+            </div>
+            <h3 class="card-title">Modular Robot Systems</h3>
+            <p class="card-text">Sale of complete modular robotic systems tailored to customer requirements and supported tasks.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            </div>
+            <h3 class="card-title">Installation &amp; Setup</h3>
+            <p class="card-text">Installation and setup support to help integrate the robot into existing manufacturing workflows.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            </div>
+            <h3 class="card-title">Task Customization</h3>
+            <p class="card-text">Task-specific customization where feasible, adapting the robot's configuration to specific manufacturing needs.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3 class="card-title">Maintenance &amp; Support</h3>
+            <p class="card-text">Ongoing maintenance and technical support to ensure continued operation and address issues.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+          <div class="card animate-on-scroll">
+            <div class="card-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+            </div>
+            <h3 class="card-title">Future Upgrades</h3>
+            <p class="card-text">Potential future upgrades and replacement components as the platform evolves and new capabilities are developed.</p>
+            <span class="status-badge status-planned">Planned</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FAQ -->
+    <!-- ============================================ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">FAQ</span>
+          <h2>Frequently Asked Questions</h2>
+          <p class="lead">Answers to common questions about MECHABOTS and our modular cobot project.</p>
+        </div>
+        <div class="faq-container mt-4" id="faq-container">
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is MECHABOTS?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>MECHABOTS is a student startup project based in Chennai, Tamil Nadu, India. We are developing a low-cost modular collaborative robot (cobot) concept designed for Micro, Small, and Medium Enterprises (MSMEs).</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is a collaborative robot?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>A collaborative robot, or cobot, is a robot designed to work alongside human operators in shared workspaces. Cobots typically feature safety provisions such as force limiting and collision detection to support safer human-robot interaction.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Which tasks is the robot designed to support?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>The robot aims to support pick-and-place operations, basic sorting, screw tightening with suitable attachments, and sensor-based object detection. Task feasibility depends on the completed design, payload capacity, and object characteristics.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Is the robot available to purchase now?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>No. MECHABOTS is currently in the prototype development stage. The robot is not yet available for purchase. We are working on building and testing the prototype.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>What is the ₹2–3 lakh figure?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>This is our initial target development cost for the modular cobot concept. It is not a confirmed manufacturing cost or selling price. The final cost will be refined through component selection, prototype testing, and supplier quotations.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can the robot use different grippers?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>The modular design aims to support interchangeable end-effectors for different tasks. This includes concepts for parallel grippers, suction cups, and screw-driving attachments. These are planned features that will be validated during prototype testing.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>Can the design be adapted to our factory?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Customization potential depends on the final robot design, task requirements, payload, reach, accuracy, and environmental factors. We would be happy to discuss your specific requirements once the prototype reaches an appropriate stage of readiness.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>How will safety be evaluated?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>Safety evaluation will involve risk assessment, testing of emergency-stop provisions, speed and force limits, and collision detection where implemented. Actual collaborative use requires engineering validation and application-specific risk assessment.</p>
+            </div>
+          </div>
+          <div class="faq-item animate-on-scroll">
+            <button class="faq-question" aria-expanded="false">
+              <span>How can an MSME discuss a potential pilot?</span>
+              <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+            </button>
+            <div class="faq-answer" role="region">
+              <p>You can reach us at <a href="mailto:tharunrajasekar20@gmail.com">tharunrajasekar20@gmail.com</a> or call <a href="tel:+916382750213">+91 63827 50213</a>. We welcome conversations about your automation needs and will explore potential pilot opportunities as our prototype development progresses.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- CONTACT -->
+    <!-- ============================================ -->
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-badge">Get in Touch</span>
+          <h2>Let's Explore Automation for Your Factory.</h2>
+          <p class="lead">Tell us about the repetitive manufacturing tasks you want to improve. The MECHABOTS team would like to understand your requirements and explore potential applications for our modular cobot concept.</p>
+        </div>
+        <div class="contact-grid mt-4">
+          <div class="contact-info animate-on-scroll">
+            <h3>Contact Information</h3>
+            <div class="contact-info-items">
+              <a href="mailto:tharunrajasekar20@gmail.com" class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info-label">Email</p>
+                  <p class="contact-info-value">tharunrajasekar20@gmail.com</p>
+                </div>
+              </a>
+              <a href="tel:+916382750213" class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info-label">Phone</p>
+                  <p class="contact-info-value">+91 63827 50213</p>
+                </div>
+              </a>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info-label">Location</p>
+                  <p class="contact-info-value">Chennai, Tamil Nadu, India</p>
+                </div>
+              </div>
+              <a href="https://www.linkedin.com/in/tharunpranav-g-r-145a75319" target="_blank" rel="noopener noreferrer" class="contact-info-item">
+                <div class="contact-info-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <p class="contact-info-label">LinkedIn</p>
+                  <p class="contact-info-value">Connect with us</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-container animate-on-scroll" style="animation-delay: 0.15s">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-name" class="form-label">Name <span class="required">*</span></label>
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="Your full name" required minlength="2" autocomplete="name">
+                  <span class="form-error" id="form-name-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-company" class="form-label">Company <span class="required">*</span></label>
+                  <input type="text" id="form-company" name="company" class="form-input" placeholder="Your company name" required autocomplete="organization">
+                  <span class="form-error" id="form-company-error" role="alert"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-email" class="form-label">Work Email <span class="required">*</span></label>
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="you@company.com" required autocomplete="email">
+                  <span class="form-error" id="form-email-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-phone" class="form-label">Phone <span class="optional">(optional)</span></label>
+                  <input type="tel" id="form-phone" name="phone" class="form-input" placeholder="+91 XXXXX XXXXX" autocomplete="tel">
+                  <span class="form-error" id="form-phone-error" role="alert"></span>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="form-industry" class="form-label">Industry <span class="required">*</span></label>
+                  <select id="form-industry" name="industry" class="form-input form-select" required>
+                    <option value="" disabled selected>Select your industry</option>
+                    <option value="automotive">Automotive</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="packaging">Packaging</option>
+                    <option value="food-processing">Food Processing</option>
+                    <option value="textiles">Textiles</option>
+                    <option value="plastics">Plastics</option>
+                    <option value="metal-fabrication">Metal Fabrication</option>
+                    <option value="pharmaceuticals">Pharmaceuticals</option>
+                    <option value="general-manufacturing">General Manufacturing</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <span class="form-error" id="form-industry-error" role="alert"></span>
+                </div>
+                <div class="form-group">
+                  <label for="form-task" class="form-label">Task to Automate <span class="required">*</span></label>
+                  <input type="text" id="form-task" name="task" class="form-input" placeholder="e.g., Pick-and-place, sorting" required>
+                  <span class="form-error" id="form-task-error" role="alert"></span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message <span class="required">*</span></label>
+                <textarea id="form-message" name="message" class="form-input form-textarea" placeholder="Tell us about your manufacturing process and what you'd like to automate..." required minlength="10" rows="4"></textarea>
+                <span class="form-error" id="form-message-error" role="alert"></span>
+              </div>
+              <div class="form-actions">
+                <button type="submit" class="btn-primary btn-lg" id="btn-enquiry" data-type="enquiry">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                  Send an Enquiry
+                </button>
+                <button type="submit" class="btn-secondary btn-lg" id="btn-pilot" data-type="pilot">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                  Discuss a Pilot
+                </button>
+              </div>
+              <p class="form-note">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+                Submitting this form will open your default email client with the enquiry details pre-filled. No data is sent to a server.
+              </p>
+            </form>
+            <!-- Success State -->
+            <div class="form-success" id="form-success" hidden>
+              <div class="form-success-icon">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              </div>
+              <h3>Your email client should open shortly.</h3>
+              <p>If it doesn't open automatically, you can email us directly at <a href="mailto:tharunrajasekar20@gmail.com">tharunrajasekar20@gmail.com</a>.</p>
+              <button class="btn-secondary" id="form-reset-btn">Send Another Enquiry</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="MECHABOTS" class="footer-logo" width="160" height="32">
+          <p class="footer-description">A student startup project developing a low-cost modular collaborative robot to make automation more accessible for Micro, Small, and Medium Enterprises.</p>
+          <span class="footer-badge">🤖 Student Startup Project — Prototype in Development</span>
+        </div>
+        <div class="footer-nav">
+          <h4 class="footer-heading">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#solution">Our Solution</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#development">Development</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-info">
+          <h4 class="footer-heading">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:tharunrajasekar20@gmail.com">tharunrajasekar20@gmail.com</a></li>
+            <li><a href="tel:+916382750213">+91 63827 50213</a></li>
+            <li>Chennai, Tamil Nadu, India</li>
+            <li><a href="https://www.linkedin.com/in/tharunpranav-g-r-145a75319" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year">2026</span> MECHABOTS. Student startup project. All rights reserved.</p>
+        <p class="footer-note">MECHABOTS is a student startup project with a prototype under development. Product specifications, pricing, and availability are subject to change.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts (config.js must load first) -->
+  <script src="js/config.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/faq.js"></script>
+  <script src="js/contact-form.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
